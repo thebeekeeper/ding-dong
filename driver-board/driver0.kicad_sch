@@ -453,8 +453,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:BUK7880-55A"
+		(symbol "Transistor_FET:Q_NMOS_GSD"
 			(pin_names
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -469,7 +470,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BUK7880-55A"
+			(property "Value" "Q_NMOS_GSD"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -478,28 +479,16 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf"
-				(at 5.08 -3.81 0)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "7A Id, 55V Vds, N-Channel Enhancement Mode MOSFET, SOT-223"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -508,7 +497,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "n-channel n channel mosfet enhancement mode"
+			(property "Description" "N-MOSFET transistor, gate/source/drain"
 				(at 0 0 0)
 				(effects
 					(font
@@ -517,7 +506,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*"
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -526,7 +515,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BUK7880-55A_0_1"
+			(symbol "Q_NMOS_GSD_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -670,7 +659,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -693,7 +682,7 @@
 					)
 				)
 			)
-			(symbol "BUK7880-55A_1_1"
+			(symbol "Q_NMOS_GSD_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -722,7 +711,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -740,7 +729,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1164,110 +1153,6 @@
 		(uuid "d26cd656-0b8a-434a-97e6-45ceec263874")
 	)
 	(symbol
-		(lib_id "Transistor_FET:BUK7880-55A")
-		(at 165.1 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b539329-b64f-494f-840e-e5ff4ffd581e")
-		(property "Reference" "Q1"
-			(at 170.307 91.4978 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUK7880-55A"
-			(at 170.307 93.9221 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 170.18 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BUK7880-55A.pdf"
-			(at 170.18 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "7A Id, 55V Vds, N-Channel Enhancement Mode MOSFET, SOT-223"
-			(at 165.1 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "de8464a5-e95c-48a5-816d-debd419a6270")
-		)
-		(pin "1"
-			(uuid "ca37c1b2-08e6-4239-813b-d85948c3787a")
-		)
-		(pin "3"
-			(uuid "92a95f36-c3dd-4ab5-8ec0-94729a268f55")
-		)
-		(instances
-			(project "driver-board"
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/119ff494-b194-43eb-83d5-0f887251f180"
-					(reference "Q6")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/7d631dd7-8150-4150-b9ae-ac3cc1de9e4f"
-					(reference "Q5")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/7fb9460a-2591-4e13-bcf7-abe67859cef0"
-					(reference "Q8")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/b1385036-17e2-455d-858c-2a9ed54f1ad3"
-					(reference "Q3")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/b4181847-7a43-4500-bd8e-7b5693dc7546"
-					(reference "Q1")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/b5934f9c-5359-4230-944d-cb36da629d67"
-					(reference "Q7")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/ca198ab4-2dfe-4f1b-aeb4-730993e48968"
-					(reference "Q2")
-					(unit 1)
-				)
-				(path "/3e314726-7059-4cf1-a457-28a818b66c88/ec1069f6-7b9e-4d48-bdab-0db2689c016a"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 156.21 97.79 180)
 		(unit 1)
@@ -1360,6 +1245,107 @@
 				)
 				(path "/3e314726-7059-4cf1-a457-28a818b66c88/ec1069f6-7b9e-4d48-bdab-0db2689c016a"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
+		(at 165.1 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d0e3fe9-1b09-4c86-b5d8-ea6efd474d85")
+		(property "Reference" "Q11"
+			(at 170.307 91.4978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ZXM61N03FTA"
+			(at 170.307 93.9221 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 170.18 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "036d2d67-6c6d-41d3-8561-52704cf261e5")
+		)
+		(pin "3"
+			(uuid "9aa09df8-50df-42ad-9bb2-a836cca0c723")
+		)
+		(pin "1"
+			(uuid "bfb51f52-a12c-46c3-ac8c-3c3bda98bed6")
+		)
+		(instances
+			(project ""
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/119ff494-b194-43eb-83d5-0f887251f180"
+					(reference "Q16")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/7d631dd7-8150-4150-b9ae-ac3cc1de9e4f"
+					(reference "Q15")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/7fb9460a-2591-4e13-bcf7-abe67859cef0"
+					(reference "Q18")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/b1385036-17e2-455d-858c-2a9ed54f1ad3"
+					(reference "Q13")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/b4181847-7a43-4500-bd8e-7b5693dc7546"
+					(reference "Q11")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/b5934f9c-5359-4230-944d-cb36da629d67"
+					(reference "Q17")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/ca198ab4-2dfe-4f1b-aeb4-730993e48968"
+					(reference "Q12")
+					(unit 1)
+				)
+				(path "/3e314726-7059-4cf1-a457-28a818b66c88/ec1069f6-7b9e-4d48-bdab-0db2689c016a"
+					(reference "Q14")
 					(unit 1)
 				)
 			)
@@ -1477,7 +1463,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "0"
 			(at 143.51 90.1008 90)
 			(effects
 				(font

@@ -10,7 +10,7 @@
 #define TAG "ding-dong"
 
 #define CHANNEL_COUNT 8
-static uint8_t pins[CHANNEL_COUNT] = { 2, 3, 4, 5, 6, 7, 8, 10 };
+static uint8_t pins[CHANNEL_COUNT] = { 2, 3, 4, 5, 6, 7, 18, 10 };
 void init_io(void);
 
 void app_main(void)
@@ -20,6 +20,14 @@ void app_main(void)
 
     uint8_t idx = 0;
     while(1) {
+        /*ESP_LOGI(TAG, "high");
+        gpio_set_level(pins[0], 1);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        ESP_LOGI(TAG, "low");
+        gpio_set_level(pins[0], 0);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        */
+
         ESP_LOGI(TAG, "Actuating %u", idx);
         gpio_set_level(pins[idx], 1);
         vTaskDelay(500 / portTICK_PERIOD_MS);

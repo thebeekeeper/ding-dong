@@ -962,7 +962,7 @@
 				)
 			)
 			(property "ManufacturerPartNumber" "3587-20TR"
-				(at 0 0 0)
+				(at -0.762 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1018,6 +1018,34 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "3587-20TR_0_1"
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "3587-20TR_1_0"
 				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -1050,6 +1078,44 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "3587-20TR_1_1"
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2_2"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1440,6 +1506,12 @@
 		(uuid "217e086d-ca5c-446b-91c2-ab9c2832a3fb")
 	)
 	(junction
+		(at 44.45 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "322da102-d958-4f83-a18c-148604e44963")
+	)
+	(junction
 		(at 105.41 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1470,6 +1542,12 @@
 		(uuid "7eaa12f9-e44a-4fc3-9213-57fbb4e975e4")
 	)
 	(junction
+		(at 62.23 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f5c95bb-1df1-43ca-812c-8105fc49fb1b")
+	)
+	(junction
 		(at 201.93 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1486,6 +1564,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb7beb75-f901-456e-9acf-ca9a2f887e6b")
+	)
+	(wire
+		(pts
+			(xy 44.45 25.4) (xy 45.72 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0722428a-03c3-4b73-adb3-5ce080152f4f")
 	)
 	(wire
 		(pts
@@ -1569,6 +1657,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 27.94) (xy 62.23 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d4fb1b5-9dd2-4a02-a074-8c85361a61d7")
+	)
+	(wire
+		(pts
 			(xy 102.87 101.6) (xy 110.49 101.6)
 		)
 		(stroke
@@ -1596,6 +1694,16 @@
 			(type default)
 		)
 		(uuid "375af903-7823-4e68-ac47-68c5fb8615c1")
+	)
+	(wire
+		(pts
+			(xy 62.23 27.94) (xy 62.23 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fd98197-e9bf-469e-80ad-0ad775e7a7f9")
 	)
 	(wire
 		(pts
@@ -1649,6 +1757,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 25.4) (xy 63.5 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50719c93-9429-488e-8577-4a5228a5e99a")
+	)
+	(wire
+		(pts
 			(xy 180.34 58.42) (xy 172.72 58.42)
 		)
 		(stroke
@@ -1696,6 +1814,16 @@
 			(type default)
 		)
 		(uuid "6f5b6dc8-9b0d-4819-83c6-8b6f16badecd")
+	)
+	(wire
+		(pts
+			(xy 44.45 27.94) (xy 44.45 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a730a1-eefd-4779-9b15-cd37c4e70b5a")
 	)
 	(wire
 		(pts
@@ -1889,7 +2017,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 25.4) (xy 63.5 25.4)
+			(xy 60.96 25.4) (xy 62.23 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1949,7 +2077,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 25.4) (xy 45.72 25.4)
+			(xy 39.37 25.4) (xy 44.45 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1976,6 +2104,16 @@
 			(type default)
 		)
 		(uuid "ea596e87-5be6-4a78-a2f3-6f3d9eb16ee4")
+	)
+	(wire
+		(pts
+			(xy 45.72 27.94) (xy 44.45 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec71eb0d-fa4e-44ec-9cdd-3789aca604cb")
 	)
 	(wire
 		(pts
@@ -2341,11 +2479,17 @@
 				)
 			)
 		)
-		(pin "1_1"
+		(pin "1_2"
 			(uuid "6b59fa65-0155-4f45-9d66-9218c585d100")
 		)
-		(pin "2_1"
+		(pin "1_1"
 			(uuid "5dbbe374-add3-4e8e-aff3-2f069e5682f7")
+		)
+		(pin "2_2"
+			(uuid "8cac62a9-20ce-472c-be17-5a642a613ad1")
+		)
+		(pin "2_1"
+			(uuid "f3757177-0273-4217-a173-927d5d4db45f")
 		)
 		(instances
 			(project ""
